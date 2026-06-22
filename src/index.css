@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #080f1f;
+  --color-navy-900: #0F1B35;
+  --color-navy-800: #1a2a4a;
+  --color-navy-700: #253a5f;
+  --color-navy-600: #304a74;
+  --color-navy-500: #3b5a89;
+  --color-gold-500: #F59E0B;
+  --color-gold-400: #fbbf24;
+  --color-gold-300: #fcd34d;
+  --color-gold-600: #d97706;
+  --color-banking-50: #eff6ff;
+  --color-banking-100: #dbeafe;
+  --color-banking-200: #bfdbfe;
+  --color-banking-300: #93c5fd;
+  --color-banking-400: #60a5fa;
+  --color-banking-500: #2563EB;
+  --color-banking-600: #1d4ed8;
+  --color-banking-700: #1e40af;
+  --color-banking-800: #1e3a8a;
+  --color-banking-900: #1e3a8a;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-info: #3B82F6;
+}
+
+* {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutRight {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s ease-out forwards;
+}
+
+.animate-slide-out-right {
+  animation: slideOutRight 0.3s ease-in forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 27, 53, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 27, 53, 0.4);
+}
