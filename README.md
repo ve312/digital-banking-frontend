@@ -368,12 +368,7 @@ En `vite.config.js` están configuradas rutas de proxy para evitar problemas de 
 
 ##  Autor
 
-**Desarrollado por** — [Pipe](https://github.com/pipe)
+Desarrollado por [Daniel Felipe Ordoñez Amaya](https://github.com/ve312)
 
 > Este proyecto fue desarrollado como parte de un portafolio profesional. Si tienes preguntas, sugerencias o deseas colaborar, no dudes en contactar.
 
----
-
-<div align="center">
-  <sub>Hecho con ❤️ y ☕ | 2026</sub>
-</div>
