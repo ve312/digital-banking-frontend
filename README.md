@@ -1,7 +1,7 @@
 <div align="center">
   <img src="src/assets/bank-logo.png" alt="ProjectBank Logo" width="220" style="margin-bottom: 8px"/>
   <br>
-  <h1>🏦 ProjectBank — Banca Global</h1>
+  <h1> ProjectBank — Banca Global</h1>
   <p>
     <strong>Sistema de gestión bancaria</strong> — Panel administrativo moderno para la administración de clientes, cuentas, transacciones y usuarios bancarios.
   </p>
@@ -16,7 +16,7 @@
 
 ---
 
-## 📋 Descripción general
+## Descripción general
 
 **ProjectBank** es una aplicación frontend de panel de administración bancaria que permite gestionar de forma integral las operaciones de una entidad financiera. Desarrollada con **React 19** y **Vite 8**, consume una API REST backend desarrollada en **Java con Spring Boot** y cuenta con un sistema de autenticación JWT con control de acceso basado en roles (**ADMIN**, **ASESOR**, **AUDITOR**).
 
@@ -24,7 +24,7 @@ El proyecto está diseñado como un SPA (Single Page Application) con una interf
 
 ---
 
-## 🖼️ Captura general de la solución
+##  Captura general de la solución
 
 > Las imágenes de assets se encuentran en `src/assets/` e incluyen recursos visuales para la página de inicio de sesión, dashboard y módulos del sistema.
 
@@ -37,11 +37,11 @@ El proyecto está diseñado como un SPA (Single Page Application) con una interf
 | **Transacciones** | Consignaciones, retiros, transferencias e historial con comprobante |
 | **Usuarios** | Administración de usuarios del sistema con roles y estados (solo ADMIN) |
 
-> ⚠️ Las imágenes de preview real requieren ejecutar el proyecto o acceder al entorno desplegado.
+>  Las imágenes de preview real requieren ejecutar el proyecto o acceder al entorno desplegado.
 
 ---
 
-## ✨ Características principales
+##  Características principales
 
 - **Autenticación JWT** — Inicio de sesión seguro con tokens almacenados en localStorage y renovación automática.
 - **Control de acceso por roles** — Tres niveles de permiso (ADMIN, ASESOR, AUDITOR) que condicionan la visibilidad y acciones disponibles en cada módulo.
@@ -58,7 +58,7 @@ El proyecto está diseñado como un SPA (Single Page Application) con una interf
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 ### Frontend
 
@@ -86,7 +86,7 @@ El proyecto está diseñado como un SPA (Single Page Application) con una interf
 
 ---
 
-## 🏗️ Arquitectura del frontend
+##  Arquitectura del frontend
 
 El proyecto sigue una arquitectura modular basada en **features**, donde cada funcionalidad de negocio es un módulo independiente dentro de `src/modules/`.
 
@@ -120,7 +120,7 @@ Usuario → React Component → Service (api/) → Axios Instance → Backend RE
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 bancoFrontend/
@@ -190,7 +190,7 @@ bancoFrontend/
 
 ---
 
-## 📋 Prerrequisitos
+##  Prerrequisitos
 
 Antes de comenzar, asegúrate de tener instalado:
 
@@ -200,7 +200,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ---
 
-## 🔧 Instalación
+##  Instalación
 
 ```bash
 # Clonar el repositorio
@@ -213,7 +213,7 @@ npm install
 
 ---
 
-## 🌐 Variables de entorno
+##  Variables de entorno
 
 El proyecto utiliza variables de entorno para configurar la URL de la API backend.
 
@@ -228,11 +228,11 @@ El proyecto utiliza variables de entorno para configurar la URL de la API backen
 | `.env` | Entorno de producción (apunta al servidor desplegado en AWS) |
 | `.env.development` | Entorno de desarrollo (vacío → usa `localhost:8080`) |
 
-> **⚠️ Importante:** El valor predeterminado cuando `VITE_API_URL` está vacío o no definido es `http://localhost:8080`. Esto permite que el proxy de desarrollo de Vite funcione correctamente durante el desarrollo local.
+> ** Importante:** El valor predeterminado cuando `VITE_API_URL` está vacío o no definido es `http://localhost:8080`. Esto permite que el proxy de desarrollo de Vite funcione correctamente durante el desarrollo local.
 
 ---
 
-## 🚀 Ejecución local
+##  Ejecución local
 
 ```bash
 # Desarrollo con recarga en caliente (hot reload)
@@ -253,7 +253,7 @@ npm run preview
 
 ---
 
-## 📦 Scripts disponibles
+##  Scripts disponibles
 
 | Script | Comando | Descripción |
 |--------|---------|-------------|
@@ -318,7 +318,7 @@ En `vite.config.js` están configuradas rutas de proxy para evitar problemas de 
 
 ---
 
-## ✅ Buenas prácticas implementadas
+##  Buenas prácticas implementadas
 
 ### Código y arquitectura
 
@@ -351,7 +351,7 @@ En `vite.config.js` están configuradas rutas de proxy para evitar problemas de 
 
 ---
 
-## 🔮 Mejoras futuras
+##  Mejoras futuras
 
 - [ ] **Inferno de tipado con TypeScript** — Migrar el proyecto de JSX a TypeScript para mejorar la mantenibilidad y detección temprana de errores.
 - [ ] **React Query (TanStack Query)** — La dependencia ya está instalada. Integrarla para reemplazar los `useEffect` + `useState` manuales por una capa de fetching con caché, revalidación y estados de carga/error automáticos.
@@ -366,7 +366,7 @@ En `vite.config.js` están configuradas rutas de proxy para evitar problemas de 
 
 ---
 
-## 👤 Autor
+##  Autor
 
 **Desarrollado por** — [Pipe](https://github.com/pipe)
 
